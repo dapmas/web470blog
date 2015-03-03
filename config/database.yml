@@ -1,0 +1,27 @@
+# PostgreSQL. Version 9.3
+#
+# Configure Using Gemfile
+# gem 'pg'
+#
+development:
+  adapter: postgresql
+  database: blog
+  username: postgres
+  password: 
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: blog
+  username: postgres
+  password: 
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: blog
+  pool: 5
+  username: postgres
+  password:
