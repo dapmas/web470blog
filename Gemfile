@@ -52,6 +52,7 @@ gem 'normalize-rails', '3.0.1'
 gem 'jquery-rails', '3.1.0'
 gem 'jquery-ui-rails', '5.0'
 gem 'select2-rails', '3.5.4'
+gem 'turbolinks'
 
 # Assets
 gem 'sass-rails', '4.0.3'

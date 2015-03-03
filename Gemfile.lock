@@ -396,6 +396,8 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
+    turbolinks (2.5.3)
+      coffee-rails
     twitter (5.8.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
@@ -483,6 +485,7 @@ DEPENDENCIES
   sinatra (= 1.4.5)
   spring (= 1.1.2)
   therubyracer
+  turbolinks
   twitter (= 5.8.0)
   uglifier (= 2.5.0)
   unicorn (= 4.8.2)
