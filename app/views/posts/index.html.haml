@@ -1,0 +1,14 @@
+%h1 Posts#index
+- @posts.each do |p| 
+ = link_to p.title,p
+ %br
+ = p.body
+ %br
+ %hr 
+%h3
+ = link_to "Add New Post",new_post_path
+
+
+//In Haml if u want to print that part use "=" else use "-" just to execute that part
+// Like here in loop I used "= @posts.each" which printed the full hash also and i don't need to print it, just to execute it.
+//SO, instead use "- @posts.each"

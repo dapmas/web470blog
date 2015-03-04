@@ -1,0 +1,14 @@
+%h1 Add New Post
+= form_for @posts do |f|
+ %p
+  = f.label :title
+  %br
+  = f.text_field :title
+ %p
+  = f.label :body
+  %br
+  = f.text_area :body
+ %p
+  = f.select :category_id, @category.collect {|x| [x.name, x.id]},{:include_blank => "Select One"}
+ %p
+  = f.submit "Add Post"
