@@ -69,6 +69,7 @@ gem 'pg'         , '0.18.1'                         # RDBMS
 
 gem 'foreigner'  , '1.6.1', require: false          # Enforce data consistency
 gem 'activeadmin', github: 'gregbell/active_admin'  # Admin Console
+#gem 'activeadmin', github: 'activeadmin'
 
 # Configuration
 gem 'rails_config', '0.3.3'
