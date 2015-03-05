@@ -4,11 +4,10 @@
  %br
  = p.body
  %br
- %hr 
-%h3
- = link_to "Add New Post",new_post_path
+ %hr
 
 
 //In Haml if u want to print that part use "=" else use "-" just to execute that part
 // Like here in loop I used "= @posts.each" which printed the full hash also and i don't need to print it, just to execute it.
 //SO, instead use "- @posts.each"
+/%h3= link_to "Add New Post",new_post_path

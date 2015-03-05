@@ -1,2 +1,11 @@
-%h1 Categories#show
-%p Find me in app/views/categories/show.html.haml
+%h1
+ = @categories.name
+- if @posts.present? 
+ - @posts.each do |p|
+  %h3
+   = link_to p.title,p
+  %p
+   = p.body
+- else
+ %p Sorry No Posts in this Category!
+= link_to "Back to Categories", categories_path

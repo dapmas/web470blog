@@ -6,5 +6,8 @@
  = @posts.created_at.strftime("%T")
 %p
  = @posts.body
-= link_to "Edit Post", edit_post_path   
-= link_to "Delete",@posts, data: { confirm: "Are you Sure you Want to Delete ?"}, :method => :delete
+%h4 
+Category : 
+= link_to @posts.category.name, category_path( :id => @posts.category.id)
+%p
+ = link_to "Back",posts_path

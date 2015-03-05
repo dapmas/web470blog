@@ -1,13 +1,20 @@
-class CategoriesController < ApplicationController
-  def index
-  end
+class CategoriesController < InheritedResources::Base
 
-  def edit
-  end
+	def index
+		@categories = Category.all
+	end
 
-  def new
-  end
+	def show
+		@categories = Category.find(params[:id])
+		@title = @categories.name
+		@posts = @categories.posts
+	end 
 
-  def show
-  end
+	private
+
+    def category_params
+      params.require(:category).permit(:name)
+    end
 end
+
+  

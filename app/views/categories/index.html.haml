@@ -1,2 +1,9 @@
-%h1 Categories#index
-%p Find me in app/views/categories/index.html.haml
+%h1 Listing categories
+
+%ul
+ - @categories.each do |category|
+  %li
+   = link_to category.name,category
+%br
+
+ 
