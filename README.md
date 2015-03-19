@@ -1,7 +1,7 @@
 Readme
 ==========
 
-webBlog is a blogging platform which intends to bring all passionate bloggers under one roof unified by topics.
+webBlog is a blogging platform which intends to bring passionate bloggers under one roof unified by topics.
 
 Prerequisites :
 - Versions :
