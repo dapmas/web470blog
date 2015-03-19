@@ -15,10 +15,12 @@ Prerequisites :
 - Installation ( For Ubuntu )
     1. Install Ruby and Rails. Follow this [blog](http://ryanbigg.com/2014/10/ubuntu-ruby-ruby-install-chruby-and-you//) to get rails up and running. Use [this](http://guides.rubyonrails.org/) to get a hold on rails.
     2. Install PostgresSql to set up DB. Follow [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04) in case you need help.
-    3. Install pgadmin
+    3. Install git
+    4. Install pgadmin
   
 - **Development**
     1. Fork and then Clone web470blog, then run following commands.
+    - `git clone "link of repo"`
     - `cd /path/to/project`
     - `bundle install`
     - `rake db:create`
